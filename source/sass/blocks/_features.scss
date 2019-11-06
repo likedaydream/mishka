@@ -1,0 +1,55 @@
+.features {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+
+  padding-top: 64px;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $features-color;
+}
+
+.features__icon {
+  position: absolute;
+  left: 0;
+  top: 32px;
+
+  transform: translateY(-50%);
+
+  path {
+    fill: $features-icon-color;
+  }
+}
+
+.features__icon--ecology {
+  left: 8px;
+}
+
+.features__icon--likes {
+  left: 7px;
+}
+
+.features__icon--cute {
+  left: 3px;
+}
+
+.features__icon--domestic {
+  left: -4px;
+}
+
+.features__icon--wrapping {
+  left: 3px;
+}

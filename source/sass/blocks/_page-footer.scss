@@ -1,0 +1,41 @@
+.page-footer {
+  background-color: $page-footer-bg;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__copyright {
+  padding: 22px 0 23px;
+  margin: 0;
+
+  text-align: center;
+}
+
+.page-footer__copyright-link {
+  display: inline-flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  text-decoration: none;
+  color: $title-color;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
+}
+
+.page-footer__copyright-logo {
+  margin-left: 40px;
+
+  fill: $primary-color;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-logo,
+.page-footer__copyright-link:focus .page-footer__copyright-logo {
+  fill: $primary-color-dark;
+}
+

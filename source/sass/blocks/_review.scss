@@ -1,0 +1,28 @@
+.review {
+
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.review__author {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.review__author-name {
+  display: block;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  line-height: 24px;
+  color: $bold-color;
+}
+
+.review__author-link {
+  display: block;
+
+  font-style: normal;
+}

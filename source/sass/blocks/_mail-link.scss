@@ -1,0 +1,23 @@
+.mail-link {
+  padding-bottom: 2px;
+  border-bottom: 1px solid $primary-color;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $default-font-color;
+}
+
+.mail-link:hover,
+.mail-link:focus {
+  border-bottom-color: $primary-color-dark;
+
+  color: $primary-color-dark;
+}
+
+.mail-link:active {
+  border-bottom-color: rgba($primary-color-dark, 0.1);
+
+  color: rgba($primary-color-dark, 0.3);
+}

@@ -1,0 +1,22 @@
+.decorated-section {
+  position: relative;
+
+  padding-bottom: 6px;
+
+  // wave
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 0% 0%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+  }
+}

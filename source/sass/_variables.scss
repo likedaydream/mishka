@@ -1,0 +1,91 @@
+//
+// Sitewide configuration variables
+//
+
+// Colors
+$color-white: rgb(255, 255, 255) !default;
+$color-black: rgb(0, 0, 0) !default;
+$color-gray: rgb(236, 236, 236) !default;
+$color-darkgray: rgb(68, 68, 68) !default;
+$color-lightgray: rgb(241, 241, 241) !default;
+
+$primary-color: rgb(99, 209, 187) !default;
+$primary-color-darken: rgb(89, 213, 188) !default;
+$primary-color-semidark: rgb(86, 195, 178) !default;
+$primary-color-dark: rgb(70, 193, 174) !default;
+$bg-color: $color-white !default;
+
+
+// Default borders
+$border-width: 1px !default;
+$border-color: $color-gray !default;
+$border-full: $border-width solid $border-color !default;
+
+// Shadow
+$shadow-color: rgba(0, 1, 1, 0.25) !default;
+$box-shadow: 0 5px 10px $shadow-color !default;
+
+
+// Default font
+$default-font-style: normal !default;
+$default-font-weight: 400 !default;
+$default-font-size: 15px !default;
+$default-line-height: 30px !default;
+$default-font-family: 'Open Sans', 'Arial', sans-serif !default;
+$default-font-color: $color-darkgray !default;
+
+$text-color-light: $color-white !default;
+
+// Bold font
+$bold-font-weight: 700 !default;
+$bold-color: $color-black !default;
+
+
+
+// Grid
+$gutter-width: 30px !default;
+
+// Container
+$container-padding: $gutter-width !default;
+
+
+// === Common blocks
+
+// Title
+$title-color: $color-black !default;
+
+// Button
+$btn-border-color: $color-darkgray !default;
+$btn-color: $default-font-color !default;
+$btn-bg-color: $bg-color !default;
+$btn-hover-bg-color: $color-darkgray !default;
+
+// === Content blocks
+
+// Navbar
+$navbar-border-width: $border-width !default;
+$navbar-border-color: $border-color !default;
+$navbar-border: $navbar-border-width solid $navbar-border-color !default;
+$navbar-bg-color: $bg-color !default;
+$navbar-gutter: $gutter-width !default;
+$navbar-link-margin: 45px !default;
+
+
+// Featured product card
+$featured-product-card-title-color: $title-color !default;
+
+
+// Features
+$features-color: $color-black !default;
+$features-icon-color: $primary-color !default;
+
+// Footer
+$page-footer-bg: $color-lightgray !default;
+
+
+// Modal
+$modal-border-color: rgb(198, 198, 198) !default;
+
+// Size-select
+$size-select-text-color: $color-darkgray !default;
+$size-select-border-color: rgba($color-darkgray, 0.1) !default;

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+// Variables and abstracts
+@import "variables";
+@import "mixins";
+
+// Vendor
+@import "vendor/normalize";
+@import "vendor/font-opensans";
+
+// Base
+@import "common";
+
+// Grid
+@import 'blocks/container';
+
+// Helper blocks
+@import "blocks/visually-hidden";
+@import 'blocks/decorated-section';
+
+// Common blocks
+@import 'blocks/btn';
+@import 'blocks/title';
+@import 'blocks/mail-link';
+@import 'blocks/social';
+@import 'blocks/modal-overlay';
+@import 'blocks/modal';
+
+// Content blocks
+@import "blocks/page-header";
+@import "blocks/navbar";
+@import 'blocks/searchbox';
+@import 'blocks/cartbox';
+@import 'blocks/category-navigation';
+@import 'blocks/featured-product-card';
+@import 'blocks/features';
+@import 'blocks/reviews';
+@import 'blocks/review';
+@import 'blocks/contacts';
+@import 'blocks/page-footer';
+@import 'blocks/modal-cart-add';
+@import 'blocks/size-select';

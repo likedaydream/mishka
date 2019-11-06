@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  padding: 14px;
+  border: 2px solid $btn-border-color;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $btn-color;
+
+  background-color: $btn-bg-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $text-color-light;
+
+    background-color: $btn-hover-bg-color;
+  }
+
+  &:active {
+    color: rgba($text-color-light, 0.3);
+  }
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.btn--primary {
+  color: $text-color-light;
+
+  background-color: $primary-color;
+  border-color: transparent;
+}

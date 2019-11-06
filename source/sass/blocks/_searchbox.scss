@@ -1,0 +1,16 @@
+.searchbox__link {
+  position: relative;
+
+  min-height: 19px;
+  padding-left: 45px;
+}
+
+.searchbox__icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-8px);
+
+  opacity: 0.2;
+}

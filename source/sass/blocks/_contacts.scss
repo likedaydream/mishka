@@ -1,0 +1,59 @@
+.contacts__body {
+  padding: 35px $container-padding 40px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $title-color;
+}
+
+.contacts__group {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__group:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__label {
+  flex: 0 0 75px;
+  padding: 0;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.contacts__value {
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__action {
+  padding: 39px $gutter-width;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  left: 139px;
+  top: 145px;
+
+  width: 67px;
+  height: 100px;
+
+  background-image: url("../img/icon-map-pin.svg");
+  background-position: 0% 0%;
+  background-size: 67px 100px;
+  background-repeat: no-repeat;
+}
