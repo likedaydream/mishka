@@ -1,14 +1,7 @@
-.review {
-
-}
-
 .review__text {
   margin: 0;
   margin-bottom: 30px;
-}
 
-.review__author {
-  font-size: 17px;
   line-height: 30px;
 }
 
@@ -17,12 +10,55 @@
   margin-bottom: 5px;
 
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
-  color: $bold-color;
+  color: $text-color-dark;
 }
 
 .review__author-link {
   display: block;
 
   font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
 }
+
+// == Media
+// Tablet
+@media (min-width: $tablet-width) {
+  .review {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__text {
+    margin-bottom: 39px; // space for slider controls if no author
+
+    font-size: 17px;
+  }
+
+  .review__author {
+    margin-right: $inner-padding + 45px; // space for slider controls
+    margin-top: auto;
+  }
+
+  .review__author-name {
+    margin-bottom: 0;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .reviews__inner {
+    margin-left: $inner-padding;
+  }
+
+  .review__text {
+    padding-right: 100px; // space for slider controls if no author
+  }
+}
+// END Desktop

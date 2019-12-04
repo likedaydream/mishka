@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   padding: 0;
   margin: 0;
 
@@ -20,6 +21,13 @@ body {
   color: $default-font-color;
 
   background-color: $bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: $default-font-size-tablet;
+    line-height: $default-line-height-tablet;
+  }
 }
 
 img {

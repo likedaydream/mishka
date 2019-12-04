@@ -2,6 +2,18 @@
 // Sitewide configuration variables
 //
 
+
+// Grid
+$mobile-width: 320px !default;
+$tablet-width: 768px !default;
+$desktop-width: 1150px !default;
+$media-diff: 0.02px !default; // for max-width media queries
+$inner-padding: 175px !default; // inner padding in wide blocks on desktop
+
+// Container
+$container-padding: 30px !default;
+$container-padding-tablet: 50px !default;
+
 // Colors
 $color-white: rgb(255, 255, 255) !default;
 $color-black: rgb(0, 0, 0) !default;
@@ -17,9 +29,8 @@ $bg-color: $color-white !default;
 
 
 // Default borders
-$border-width: 1px !default;
 $border-color: $color-gray !default;
-$border-full: $border-width solid $border-color !default;
+$border: 1px solid $border-color !default;
 
 // Shadow
 $shadow-color: rgba(0, 1, 1, 0.25) !default;
@@ -30,24 +41,14 @@ $box-shadow: 0 5px 10px $shadow-color !default;
 $default-font-style: normal !default;
 $default-font-weight: 400 !default;
 $default-font-size: 15px !default;
-$default-line-height: 30px !default;
+$default-line-height: 24px !default;
+$default-font-size-tablet: 17px !default;
+$default-line-height-tablet: 30px !default;
 $default-font-family: 'Open Sans', 'Arial', sans-serif !default;
 $default-font-color: $color-darkgray !default;
 
+$text-color-dark: $color-black !default;
 $text-color-light: $color-white !default;
-
-// Bold font
-$bold-font-weight: 700 !default;
-$bold-color: $color-black !default;
-
-
-
-// Grid
-$gutter-width: 30px !default;
-
-// Container
-$container-padding: $gutter-width !default;
-
 
 // === Common blocks
 
@@ -62,13 +63,28 @@ $btn-hover-bg-color: $color-darkgray !default;
 
 // === Content blocks
 
-// Navbar
-$navbar-border-width: $border-width !default;
-$navbar-border-color: $border-color !default;
-$navbar-border: $navbar-border-width solid $navbar-border-color !default;
-$navbar-bg-color: $bg-color !default;
-$navbar-gutter: $gutter-width !default;
-$navbar-link-margin: 45px !default;
+// Page header
+$page-header-bg-color: $color-lightgray !default;
+
+// Nav
+$nav-color: $color-black !default;
+$nav-bg-color: $color-white !default;
+$nav-border-color: $color-gray !default;
+
+// Searchbox
+$searchbox-color: $nav-color !default;
+$searchbox-border-color: $nav-border-color !default;
+
+// Cartbox
+$cartbox-color: $nav-color !default;
+$cartbox-border-color: $nav-border-color !default;
+
+// Footer
+$page-footer-bg-color: $color-lightgray !default;
+
+// Category nav
+$category-nav-icon-fill: rgb(20, 144, 128) !default;
+$category-nav-bg-color: rgb(249, 249, 249) !default;
 
 
 // Featured product card
@@ -79,8 +95,7 @@ $featured-product-card-title-color: $title-color !default;
 $features-color: $color-black !default;
 $features-icon-color: $primary-color !default;
 
-// Footer
-$page-footer-bg: $color-lightgray !default;
+
 
 
 // Modal

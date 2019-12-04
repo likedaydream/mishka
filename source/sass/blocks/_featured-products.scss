@@ -1,0 +1,15 @@
+.featured-products {
+  padding-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .featured-products {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured-products {
+    padding-bottom: 73px;
+  }
+}

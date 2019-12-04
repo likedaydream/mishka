@@ -1,8 +1,33 @@
+.cartbox {
+  min-height: 79px;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  border-bottom: 1px solid $cartbox-border-color;
+}
+
 .cartbox__link {
   position: relative;
 
-  min-height: 19px;
+  display: block;
+  min-height: 24px;
   padding-left: 45px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $cartbox-color;
+
+  &:hover,
+  &:focus {
+    color: rgba($cartbox-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($cartbox-color, 0.3);
+  }
 }
 
 .cartbox__icon {
@@ -14,3 +39,40 @@
 
   opacity: 0.2;
 }
+
+.cartbox__link:hover .cartbox__icon,
+.cartbox__link:focus .cartbox__icon {
+  opacity: 1;
+
+  path {
+    fill: $primary-color;
+  }
+}
+
+.cartbox__link:active .cartbox__icon {
+  path {
+    fill: rgba($primary-color, 0.3);
+  }
+}
+
+
+//
+// Media
+//
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .cartbox {
+    min-height: 88px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0;
+    border-bottom: 0;
+    border-left: 1px solid $cartbox-border-color;
+  }
+
+  .cartbox__link {
+    padding-left: 50px;
+  }
+}
+// END Tablet

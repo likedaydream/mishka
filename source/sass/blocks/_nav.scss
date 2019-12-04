@@ -1,0 +1,247 @@
+// Primary menu bar
+.nav {
+  background-color: $nav-bg-color;
+}
+
+.nav__inner {
+  position: relative;
+}
+
+// Logo
+.nav__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  padding: 21px 80px 22px;
+  margin: 0;
+  border-top: 1px solid $nav-border-color;
+  border-bottom: 1px solid $nav-border-color;
+}
+
+.nav__logo {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav__logo-img {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+/* Menu toggle */
+.nav__toggle {
+  position: absolute;
+  top: 28px;
+  right: $container-padding;
+
+  width: 21px;
+  height: 21px;
+  border: 0;
+
+  background-color: transparent;
+  background-image: url("../img/icon-menu-close.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.nav__toggle--open {
+  background-image: url("../img/icon-menu-open.svg");
+}
+
+.nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $nav-bg-color;
+}
+
+.nav__links {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  min-height: 79px;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  border-bottom: 1px solid $nav-border-color;
+}
+
+.nav__link {
+  display: block;
+  padding-left: 45px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $nav-color;
+
+
+  &:hover,
+  &:focus {
+    color: rgba($nav-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($nav-color, 0.3);
+  }
+}
+
+//
+// == Media
+//
+
+// Tablet only
+@media (min-width: $tablet-width) and (max-width: $desktop-width - $media-diff) {
+  .nav__wrapper {
+    position: relative;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 50%;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 18px;
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+
+  .nav__item {
+    min-height: 0;
+    padding: 0 18px;
+    border: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav__link {
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-black;
+  }
+}
+// END Tablet only
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .nav__inner {
+    padding-left: $container-padding-tablet;
+    padding-right: $container-padding-tablet;
+    border-bottom: 1px solid $nav-border-color;
+  }
+
+  // .nav__wrapper {
+  //   margin-bottom: -1px;
+  //   background-color: transparent;
+  // }
+
+  .nav__logo-wrapper {
+    position: absolute;
+    top: 22px;
+    left: $container-padding-tablet;
+    z-index: 1;
+
+    // display: block; // reset flex
+    justify-content: flex-start;
+    min-height: 0;
+    width: 112px;
+    height: 46px;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .nav__logo-img {
+    width: auto;
+    height: auto;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .nav__search {
+    /* Space for absolutely positioned logo */
+    margin-left: 112px + 30px;
+  }
+}
+
+
+// Desktop media
+@media (min-width: $desktop-width) {
+  .nav__logo-wrapper {
+    top: 9px;
+    left: 50%;
+
+    justify-content: center;
+    width: 149px;
+    height: 72px;
+    transform: translateX(-50%);
+  }
+
+  .nav__links {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-right: auto;
+  }
+
+  .nav__item {
+    min-height: 88px;
+    padding: 32px 35px;
+    border: 0;
+    border-right: 1px solid $nav-border-color;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+
+  .nav__link {
+    padding: 0;
+  }
+
+  .nav__search {
+    margin-left: 149px;
+  }
+}
+// /Desktop media

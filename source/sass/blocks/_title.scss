@@ -8,3 +8,19 @@
   line-height: 30px;
   color: $title-color;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    margin-bottom: 45px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

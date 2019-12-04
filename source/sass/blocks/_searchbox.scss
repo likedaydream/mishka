@@ -1,8 +1,33 @@
+.searchbox {
+  min-height: 79px;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  border-bottom: 1px solid $searchbox-border-color;
+}
+
 .searchbox__link {
   position: relative;
 
+  display: block;
   min-height: 19px;
   padding-left: 45px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $searchbox-color;
+
+  &:hover,
+  &:focus {
+    color: rgba($searchbox-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($searchbox-color, 0.3);
+  }
 }
 
 .searchbox__icon {
@@ -14,3 +39,52 @@
 
   opacity: 0.2;
 }
+
+.searchbox__link:hover .searchbox__icon,
+.searchbox__link:focus .searchbox__icon {
+  opacity: 1;
+
+  path {
+    fill: $primary-color;
+  }
+}
+
+.searchbox__link:active .searchbox__icon {
+  path {
+    fill: rgba($primary-color, 0.3);
+  }
+}
+
+
+//
+// Media
+//
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .searchbox {
+    min-height: 88px;
+    padding-top: 33px;
+    padding-bottom: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
+    border-bottom: 0;
+    border-left: 1px solid $searchbox-border-color;
+  }
+
+  .searchbox__link {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+
+  .searchbox__icon {
+    left: 50%;
+    transform: translate(-50%, -8px);
+  }
+
+  .searchbox__label {
+    @include visually-hidden();
+  }
+}
+// END Tablet

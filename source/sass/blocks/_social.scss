@@ -12,11 +12,12 @@
 .social__item {
   display: flex;
   align-items: stretch;
-  margin-right: 40px;
-}
+  margin: 0;
+  margin-left: 40px;
 
-.social__item:last-of-type {
-  margin-right: 0;
+  &:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .social__link {
