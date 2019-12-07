@@ -79,24 +79,6 @@
   @include full-width();
 }
 
-.contacts__map-image {
-  display: block;
-}
-
-.contacts__map-pin {
-  position: absolute;
-  left: 139px;
-  top: 145px;
-
-  width: 67px;
-  height: 100px;
-
-  background-image: url("../img/icon-map-pin.svg");
-  background-position: 0% 0%;
-  background-size: 67px 100px;
-  background-repeat: no-repeat;
-}
-
 
 // == Media
 

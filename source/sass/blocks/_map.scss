@@ -1,0 +1,41 @@
+.map__static {
+  display: flex;
+  justify-content: center;
+}
+
+.map__img-wrapper {
+  position: relative;
+
+  margin: 0;
+}
+
+.map__img {
+  display: block;
+}
+
+.map__pin {
+  position: absolute;
+  left: 139px;
+  top: 145px;
+
+  width: 67px;
+  height: 100px;
+
+  background-image: url("../img/icon-map-pin.svg");
+  background-position: 0% 0%;
+  background-size: 67px 100px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .map__pin {
+    left: 363px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__pin {
+    left: 239px;
+    top: 146px;
+  }
+}

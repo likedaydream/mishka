@@ -24,7 +24,6 @@
   position: absolute;
   top: -18px;
   left: 50%;
-  // z-index: 1;
   z-index: 0;
 
   width: auto;
@@ -78,12 +77,13 @@
   background-color: $primary-color;
 
   transition:
-      transform 0.2s linear,
-      margin 0.2s linear;
+    margin 0.2s linear,
+    transform 0.2s linear;
 
   &:hover,
   &:focus {
     margin-bottom: -5px;
+
     transform: translateY(-5px);
 
     background-color: $primary-color-darken;
@@ -149,6 +149,13 @@
 @media (min-width: $tablet-width) {
   .category-nav__img-container {
     height: 746px;
+  }
+
+  .category-nav__img {
+    top: 0;
+
+    width: auto;
+    height: auto;
   }
 
   .category-nav__title {

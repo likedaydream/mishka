@@ -177,8 +177,8 @@
   }
 
   .nav__logo-img {
-    width: auto;
-    height: auto;
+    width: 112px;
+    height: 46px;
   }
 
   .nav__toggle {
@@ -208,6 +208,11 @@
     width: 149px;
     height: 72px;
     transform: translateX(-50%);
+  }
+
+  .nav__logo-img {
+    width: 149px;
+    height: 72px;
   }
 
   .nav__links {

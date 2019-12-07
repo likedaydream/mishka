@@ -1,21 +1,21 @@
 @mixin visually-hidden {
-  position: absolute !important;
+  position: absolute;
 
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  border: 0 !important;
-  overflow: hidden !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
 
-  text-indent: -9999px !important;
-  white-space: nowrap !important;
+  text-indent: -9999px;
+  white-space: nowrap;
+  user-select: none;
 
-  background-color: transparent !important;
+  background-color: transparent;
 
-  clip: rect(0 0 0 0) !important;
-  clip-path: inset(100%) !important;
-  user-select: none !important;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 @mixin no-gutters {
