@@ -1,16 +1,18 @@
 .page-header {
   position: relative;
 
+  margin-bottom: 30px;
+
   background-color: $page-header-bg-color;
 }
 
 .index-page .page-header {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    // margin-bottom: 121px;
+    margin-bottom: 79px;
   }
 
   .index-page .page-header {
@@ -38,6 +40,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 128px;
+  }
+
   .index-page .page-header {
     margin-bottom: 70px;
   }

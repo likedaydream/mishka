@@ -1,0 +1,51 @@
+.cart-btn {
+  position: relative;
+
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+
+  text-decoration: none;
+  text-transform: capitalize; // hack for ie7, hide btn text
+  text-indent: -9999px; // hide btn text
+  white-space: nowrap;
+
+  background: none;
+
+  cursor: pointer;
+}
+
+.cart-btn__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  // vertical-align: top;
+  opacity: 0.2;
+}
+
+.cart-btn:hover .cart-btn__icon,
+.cart-btn:focus .cart-btn__icon {
+  opacity: 1;
+  fill: $primary-color;
+}
+
+.cart-btn:active .cart-btn__icon {
+  opacity: 0.3;
+}
+
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .cart-btn {
+    width: 21px;
+    height: 18px;
+  }
+}

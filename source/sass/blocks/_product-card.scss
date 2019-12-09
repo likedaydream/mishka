@@ -1,0 +1,144 @@
+.product-card__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.product-card__content {
+  padding: 27px;
+
+  border: 1px solid $color-gray;
+  background-color: $bg-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  }
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-color-dark;
+}
+
+.product-card__title a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+
+  border-top: 1px solid $border-color;
+}
+
+.product-card__price {
+  padding: 0;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color-dark;
+}
+
+// Media
+// Tablet
+@media (min-width: $tablet-width) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .product-card__preview {
+    flex-shrink: 0;
+    width: 50%;
+  }
+
+  .product-card__content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .product-card__title {
+    margin-bottom: 9px;
+
+    font-size: 20px;
+  }
+
+  .product-card__description {
+    font-size: 15px;
+  }
+
+  .product-card__footer {
+    margin-top: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+  }
+}
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card__preview {
+    width: auto;
+    height: 462px;
+  }
+
+  .product-card__img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .product-card__content {
+    width: auto;
+    flex-grow: 1;
+  }
+}
+// END Desktop

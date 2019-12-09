@@ -35,6 +35,8 @@
   left: 0;
   top: 50%;
 
+  width: 21px;
+  height: 18px;
   transform: translateY(-50%);
 
   opacity: 0.2;
@@ -44,15 +46,11 @@
 .cartbox__link:focus .cartbox__icon {
   opacity: 1;
 
-  path {
-    fill: $primary-color;
-  }
+  fill: $primary-color;
 }
 
 .cartbox__link:active .cartbox__icon {
-  path {
-    fill: rgba($primary-color, 0.3);
-  }
+  fill: rgba($primary-color, 0.3);
 }
 
 

@@ -1,0 +1,29 @@
+.page-title {
+  padding: 73px 0;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding-top: 100px;
+    padding-bottom: 75px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    padding-bottom: 98px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

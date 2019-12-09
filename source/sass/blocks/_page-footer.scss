@@ -1,5 +1,10 @@
 .page-footer {
+  margin-top: 58px;
   background-color: $page-footer-bg-color;
+}
+
+.index-page .page-footer {
+  margin-top: 0;
 }
 
 .page-footer__logo {
@@ -58,6 +63,10 @@
 
 // Tablet
 @media (min-width: $tablet-width) {
+  .page__footer {
+    margin-top: 63px;
+  }
+
   .page-footer__inner {
     display: flex;
     flex-direction: row;
@@ -90,3 +99,12 @@
     margin-top: 58px;
   }
 }
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .page__footer {
+    margin-top: 105px;
+  }
+}
+// END Desktop
