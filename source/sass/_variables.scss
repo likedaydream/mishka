@@ -103,3 +103,17 @@ $modal-border-color: rgb(198, 198, 198) !default;
 // Size-select
 $size-select-text-color: $color-darkgray !default;
 $size-select-border-color: rgba($color-darkgray, 0.1) !default;
+
+// Label
+$label-color: $color-black !default;
+
+// Input placeholder
+$input-placeholder-color: rgba($color-darkgray, 0.3) !default;
+
+// Inputs
+$input-color: $text-color-default !default;
+$input-border-color: $color-black !default;
+
+// Custom inputs
+$custom-radio-border-color: $color-darkgray !default;
+$custom-checkbox-border-color: $color-darkgray !default;

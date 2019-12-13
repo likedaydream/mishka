@@ -1,0 +1,25 @@
+.input-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.input-list__item {
+  margin-bottom: 22px;
+}
+
+.input-list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .input-list__item {
+    margin-bottom: 24px;
+  }
+}
+// END Tablet

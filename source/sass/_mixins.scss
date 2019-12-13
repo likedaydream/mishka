@@ -47,3 +47,15 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+@mixin label-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $label-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+  }
+}

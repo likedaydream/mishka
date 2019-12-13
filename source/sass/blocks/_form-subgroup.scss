@@ -1,0 +1,44 @@
+.form-subgroup {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-subgroup__prepend {
+  padding: 0;
+  margin: 0;
+}
+
+.form-subgroup__body {
+  padding: 0;
+  margin: 0;
+}
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .form-subgroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .form-subgroup__prepend {
+    flex-shrink: 0;
+    padding-right: 25px;
+  }
+
+  .form-subgroup__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 1%;
+  }
+}
+// END Tablet

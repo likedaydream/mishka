@@ -1,0 +1,75 @@
+.input {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border: 2px solid $input-border-color;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: $input-color;
+
+  background-color: transparent;
+  background-clip: padding-box;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+}
+
+.input::placeholder {
+  color: $input-placeholder-color;
+}
+
+// input with space for custom icon
+.input--icon {
+  padding-right: 41px;
+}
+
+// Textarea
+.input--textarea {
+  height: 142px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+
+  resize: none;
+}
+
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .input {
+    padding-left: 18px;
+    padding-right: 18px;
+
+    font-size: 19px;
+  }
+
+  .input--icon {
+    padding-right: 77px;
+  }
+
+  .input--textarea {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .input--icon {
+    padding-right: 41px;
+  }
+}
+// END Desktop

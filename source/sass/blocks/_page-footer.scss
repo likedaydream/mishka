@@ -3,7 +3,8 @@
   background-color: $page-footer-bg-color;
 }
 
-.index-page .page-footer {
+.index-page .page-footer,
+.slim-page .page-footer {
   margin-top: 0;
 }
 
@@ -63,7 +64,7 @@
 
 // Tablet
 @media (min-width: $tablet-width) {
-  .page__footer {
+  .page-footer {
     margin-top: 63px;
   }
 
@@ -92,6 +93,8 @@
   }
 
   .page-footer__copyright {
+    display: flex;
+    justify-content: flex-end;
     flex-grow: 1;
     flex-basis: 0%;
     padding-top: 0;

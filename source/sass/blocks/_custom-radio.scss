@@ -1,0 +1,104 @@
+.custom-radio {
+  position: relative;
+
+  display: inline-block;
+  min-height: 39px;
+  padding-top: 9px;
+  padding-left: 60px; // space for check
+
+  line-height: 1; // prevent space from line-height on inline label
+  vertical-align: baseline;
+}
+
+.custom-radio__label {
+  @include label-text();
+
+  position: static;
+  display: inline-block;
+}
+
+// circle
+.custom-radio__label::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+
+  width: 39px;
+  height: 39px;
+  border: 2px solid $custom-radio-border-color;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+// tick
+.custom-radio__label::after {
+  content: none; // hide initially
+
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 1;
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  background-color: $primary-color;
+}
+
+// checked tick
+input[type="radio"]:checked + .custom-radio__label::after {
+  content: ""; // show
+}
+
+// box hover
+.custom-radio__label:hover::before,
+input[type="radio"]:focus + .custom-radio__label::before {
+  border-color: $primary-color;
+}
+
+// box active
+input[type="radio"]:active + .custom-radio__label::before {
+  border-color: rgba($custom-radio-border-color, 0.3);
+}
+
+// not checked active
+input[type="radio"]:active + .custom-radio__label::after {
+  content: "";
+}
+
+// checked active
+input[type="radio"]:checked:active + .custom-radio__label::after {
+  content: none;
+}
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .custom-radio {
+    min-height: 52px;
+    padding-left: 80px; // space for check
+    padding-top: 16px;
+  }
+
+  // circle
+  .custom-radio__label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  // tick
+  .custom-radio__label::after {
+    left: 16px;
+    top: 16px;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+// END Tablet

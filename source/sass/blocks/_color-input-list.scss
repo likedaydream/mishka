@@ -1,0 +1,43 @@
+.color-input-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: -22px; // compensate bottom margin of item
+  // overflow: hidden;
+
+  list-style: none;
+}
+
+.color-input-list__item {
+  margin-bottom: 22px;
+}
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .color-input-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: -24px;
+  }
+
+  .color-input-list__item {
+    width: 240px;
+    margin-bottom: 24px;
+    margin-right: 20px;
+  }
+
+  .color-input-list__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .color-input-list__item:nth-of-type(2n) {
+    margin-right: 20px;
+  }
+}
+// END Desktop

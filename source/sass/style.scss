@@ -29,9 +29,19 @@
 @import "blocks/modal-overlay";
 @import "blocks/modal";
 @import "blocks/cart-btn";
+@import "blocks/form";
+@import "blocks/form-group";
+@import "blocks/form-subgroup";
+@import "blocks/input-list";
+@import "blocks/label";
+@import "blocks/input";
+@import "blocks/custom-input";
+@import "blocks/custom-radio";
+@import "blocks/custom-checkbox";
 
 // Content blocks
 @import "blocks/page-header";
+@import "blocks/first-section";
 @import "blocks/nav";
 @import "blocks/subnav";
 @import "blocks/searchbox";
@@ -50,3 +60,4 @@
 @import "blocks/catalog";
 @import "blocks/product-card";
 @import "blocks/product-video";
+@import "blocks/color-input-list";

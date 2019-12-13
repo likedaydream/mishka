@@ -1,0 +1,17 @@
+// First block after page header
+
+// Move first top block if it begins with text because
+// of text's line-heights space
+.first-section {
+  margin-top: 0;
+}
+
+.first-section--text {
+  margin-top: -7px;
+}
+
+@media (min-width: $tablet-width) {
+  .first-section--text {
+    margin-top: -6px;
+  }
+}

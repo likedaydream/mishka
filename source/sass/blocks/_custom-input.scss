@@ -1,0 +1,57 @@
+.custom-input {
+  position: relative;
+
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-input__icon {
+  position: absolute;
+  right: 21px; // half padding of custom input
+  top: 50%;
+  z-index: 1;
+
+  transform: translate(50%, -50%);
+
+  opacity: 0.2;
+
+  fill: $color-black;
+}
+
+.input:hover + .custom-input__icon,
+.input:focus + .custom-input__icon {
+  opacity: 1;
+  fill: $primary-color;
+}
+
+.custom-input__icon--phone {
+  width: 25px;
+  height: 24px;
+  margin-top: -2px;
+}
+
+.custom-input__icon--email {
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+}
+
+
+// Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .custom-input__icon {
+    right: 39px;
+  }
+}
+// END Tablet
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .custom-input__icon {
+    right: 21px;
+  }
+}
+// END Desktop
