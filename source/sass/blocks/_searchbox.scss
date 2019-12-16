@@ -35,24 +35,23 @@
   left: 0;
   top: 50%;
 
+  width: 18px;
+  height: 18px;
   transform: translateY(-8px);
 
   opacity: 0.2;
+
+  fill: $icon-color;
 }
 
 .searchbox__link:hover .searchbox__icon,
 .searchbox__link:focus .searchbox__icon {
   opacity: 1;
-
-  path {
-    fill: $primary-color;
-  }
+  fill: $primary-color;
 }
 
 .searchbox__link:active .searchbox__icon {
-  path {
-    fill: rgba($primary-color, 0.3);
-  }
+  fill: rgba($primary-color, 0.3);
 }
 
 

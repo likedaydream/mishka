@@ -25,36 +25,59 @@
   color: $features-color;
 }
 
-.features__icon {
+// icon
+.features__item::before {
+  content: "";
+
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 0;
 
-  transform: translateY(-50%);
+  width: 100%;
+  height: 80px;
 
-  path {
-    fill: $features-icon-color;
-  }
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
 }
 
-.features__item--ecology .features__icon {
+.features__item--ecology::before {
   left: 8px;
+
+  background-image: url("../img/icon-feature-flower.svg");
+  background-size: 32px 37px;
 }
 
-.features__item--likes .features__icon {
+.features__item--style::before {
+  background-image: url("../img/icon-feature-money.svg");
+  background-size: 47px 27px;
+}
+
+.features__item--likes::before {
   left: 7px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+  background-size: 34px 27px;
 }
 
-.features__item--cute .features__icon {
+.features__item--cute::before {
   left: 3px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+  background-size: 35px 34px;
 }
 
-.features__item--domestic .features__icon {
+.features__item--domestic::before {
   left: -4px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-size: 55px 23px;
 }
 
-.features__item--wrapping .features__icon {
+.features__item--wrapping::before {
   left: 3px;
+
+  background-image: url("../img/icon-feature-gift.svg");
+  background-size: 33px 32px;
 }
 
 //

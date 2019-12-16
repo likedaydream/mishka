@@ -108,9 +108,7 @@
 
   opacity: 0.5;
 
-  path {
-    fill: $category-nav-icon-fill;
-  }
+  fill: $category-nav-icon-fill;
 }
 
 .category-nav__link:hover .category-nav__icon,
@@ -125,11 +123,17 @@
 .category-nav__icon--interior {
   top: 23px;
   right: 36px;
+
+  width: 40px;
+  height: 62px;
 }
 
 .category-nav__icon--toys {
   top: 21px;
   right: 27px;
+
+  width: 60px;
+  height: 60px;
 }
 
 //
