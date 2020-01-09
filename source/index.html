@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Главная — Мишка</title>
 
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
   <!-- Favicon -->
   <link rel="icon" sizes="16x16" type="image/png" href="img/favicon-16.png">
@@ -24,7 +24,7 @@
 <body class="index-page">
 
 <header class="page-header">
-  <nav class="nav">
+  <nav class="nav nav--no-js">
     <div class="container container--full">
       <div class="nav__inner">
         <p class="nav__logo-wrapper">
@@ -177,7 +177,7 @@
 
           <div class="featured-product-card__action">
             <p class="featured-product-card__price">Цена: 990 руб.</p>
-            <a href="#" class="btn btn--block featured-product-card__btn">Заказать</a>
+            <a href="#" class="btn btn--block featured-product-card__btn" data-modal="#modal-cart-add">Заказать</a>
           </div><!-- /.featured-product-card__action -->
         </div><!-- /.featured-product-card__body -->
       </div><!-- /.featured-product-card -->
@@ -220,20 +220,37 @@
     <div class="container reviews__container">
       <div class="reviews__inner">
         <h2 class="title reviews__title">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="review reviews__item">
-            <blockquote class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-            <div class="review__author">
-              <b class="review__author-name">Анастасия Красильникова</b>
-              <cite class="review__author-link">@misssssiskras</cite>
-            </div>
-          </li>
-        </ul>
 
-        <p class="reviews__controls">
-          <button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
-        </p>
+        <div class="swiper-container">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="review reviews__item swiper-slide">
+              <blockquote class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+              <div class="review__author">
+                <b class="review__author-name">Анастасия Красильникова</b>
+                <cite class="review__author-link">@misssssiskras</cite>
+              </div>
+            </li>
+            <li class="review reviews__item swiper-slide">
+              <blockquote class="review__text">Ты молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+              <div class="review__author">
+                <b class="review__author-name">Анастасия Красильникова 2</b>
+                <cite class="review__author-link">@misssssiskras2</cite>
+              </div>
+            </li>
+            <li class="review reviews__item swiper-slide">
+              <blockquote class="review__text">Она молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+              <div class="review__author">
+                <b class="review__author-name">Анастасия Красильникова 3</b>
+                <cite class="review__author-link">@misssssiskras3</cite>
+              </div>
+            </li>
+          </ul>
+
+          <p class="reviews__controls">
+            <button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
+          </p>
+        </div><!-- /.swiper-container -->
 
         <button class="btn reviews__write" type="button">Написать</button>
       </div><!-- /.reviews__inner -->
@@ -281,6 +298,9 @@
               </picture>
               <span class="map__pin"></span>
             </div>
+          </div><!-- /.map__static -->
+          <div class="map__interactive">
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CGxGj80z" width="100%" height="457" frameborder="0" allowfullscreen="true"></iframe>
           </div>
         </div><!-- /.contacts__map -->
       </div><!-- /.contacts__inner -->
@@ -341,35 +361,40 @@
 </footer><!-- /.page-footer -->
 
 
-<section class="modal modal-cart-add">
-  <h2 class="modal__title">Добавить в корзину</h2>
-  <form action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="size-select">
-      <legend class="size-select__legend">Выберите размер:</legend>
-      <ul class="size-select__list">
-        <li class="size-select__item">
-          <input class="size-select__input" id="size-select-input-1" name="size" type="radio" value="s" checked>
-          <label for="size-select-input-1" class="size-select__label">S</label>
-        </li>
-        <li class="size-select__item">
-          <input class="size-select__input" id="size-select-input-2" name="size" type="radio" value="m">
-          <label for="size-select-input-2" class="size-select__label">M</label>
-        </li>
-        <li class="size-select__item">
-          <input class="size-select__input" id="size-select-input-3" name="size" type="radio" value="l">
-          <label for="size-select-input-3" class="size-select__label">L</label>
-        </li>
-      </ul>
-    </fieldset>
-    <button class="btn btn--primary btn--block modal-cart-add__btn" type="submit">Добавить</button>
-  </form>
-</section>
+<!-- Modals -->
 
 <div class="modal-overlay"></div>
+
+<section class="modal" id="modal-cart-add">
+  <div class="modal__body">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="size-select">
+        <legend class="size-select__legend">Выберите размер:</legend>
+        <ul class="size-select__list">
+          <li class="size-select__item">
+            <input class="size-select__input" id="size-select-input-1" name="size" type="radio" value="s" checked>
+            <label for="size-select-input-1" class="size-select__label">S</label>
+          </li>
+          <li class="size-select__item">
+            <input class="size-select__input" id="size-select-input-2" name="size" type="radio" value="m">
+            <label for="size-select-input-2" class="size-select__label">M</label>
+          </li>
+          <li class="size-select__item">
+            <input class="size-select__input" id="size-select-input-3" name="size" type="radio" value="l">
+            <label for="size-select-input-3" class="size-select__label">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="btn btn--primary btn--block js-cart-add-btn" type="submit">Добавить</button>
+    </form>
+  </div><!-- /.modal__body -->
+</section><!-- /.modal -->
 
 
 <!-- JS -->
 <script src="js/vendor/svgxuse.min.js"></script>
+<script src="js/vendor/swiper.min.js"></script>
 <script src="js/app.js"></script>
 
 </body>

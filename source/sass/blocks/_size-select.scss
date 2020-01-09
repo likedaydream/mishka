@@ -12,6 +12,8 @@
   margin: 0;
   margin-bottom: 20px;
 
+  font-weight: 400;
+  line-height: 30px;
   text-align: center;
 
   border: 0;
@@ -62,3 +64,14 @@
 .size-select__input:checked + .size-select__label {
   border-color: $primary-color;
 }
+
+
+// == Media
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .select__legend {
+
+  }
+}
+// END Tablet

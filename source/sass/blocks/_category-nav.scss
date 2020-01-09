@@ -60,6 +60,7 @@
 
 .category-nav__link {
   position: relative;
+  z-index: 1;
 
   display: block;
   min-height: 103px;
@@ -77,16 +78,34 @@
   background-color: $primary-color;
 
   transition:
-    margin 0.2s linear,
-    transform 0.2s linear;
+      background-color 0.1s linear,
+      color 0.1s linear;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    height: 6px;
+
+    background-color: inherit;
+
+    transition:
+        background-color 0.1s linear,
+        transform 0.1s linear;
+  }
 
   &:hover,
   &:focus {
-    margin-bottom: -5px;
-
-    transform: translateY(-5px);
-
     background-color: $primary-color-darken;
+
+    &::before {
+      transform: translateY(-5px);
+    }
   }
 
   &:active {
