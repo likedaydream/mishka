@@ -78,8 +78,8 @@
   background-color: $primary-color;
 
   transition:
-      background-color 0.1s linear,
-      color 0.1s linear;
+    background-color 0.1s linear,
+    color 0.1s linear;
 
   &::before {
     content: "";
@@ -95,8 +95,8 @@
     background-color: inherit;
 
     transition:
-        background-color 0.1s linear,
-        transform 0.1s linear;
+      background-color 0.1s linear,
+      transform 0.1s linear;
   }
 
   &:hover,

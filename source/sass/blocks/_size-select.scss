@@ -64,14 +64,3 @@
 .size-select__input:checked + .size-select__label {
   border-color: $primary-color;
 }
-
-
-// == Media
-
-// Tablet
-@media (min-width: $tablet-width) {
-  .select__legend {
-
-  }
-}
-// END Tablet
