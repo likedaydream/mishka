@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Вязание на заказ — Мишка</title>
+
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" sizes="16x16" type="image/png" href="img/favicon-16.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/vendor/picturefill.min.js" async></script>
+</head>
+<body class="slim-page">
+
+<header class="page-header">
+  <nav class="nav nav--no-js">
+    <div class="container container--full">
+      <div class="nav__inner">
+        <p class="nav__logo-wrapper">
+          <a class="nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+            </picture>
+          </a>
+        </p>
+
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">
+            Переключить меню
+          </span>
+        </button>
+
+        <div class="nav__wrapper">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html" class="nav__link">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <div class="nav__search searchbox">
+            <a href="#" class="searchbox__link">
+              <svg class="searchbox__icon" width="18" height="18" role="presentation" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="searchbox__label">Поиск</span>
+            </a>
+          </div>
+
+          <div class="nav__cart cartbox">
+            <a href="#" class="cartbox__link">
+              <svg class="cartbox__icon" width="21" height="18" role="presentation" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="cartbox__label">Корзина: пока пуста</span>
+            </a>
+          </div><!-- /.nav__cart -->
+        </div><!-- /.nav__wrapper -->
+      </div><!-- /.nav__inner -->
+    </div><!-- /.container -->
+  </nav><!-- /.nav -->
+
+  <div class="subnav">
+    <div class="container">
+      <div class="subnav__inner">
+        <ul class="subnav__links">
+          <li class="subnav__item">
+            <a href="#" class="subnav__link">Новые поступления</a>
+          </li>
+          <li class="subnav__item">
+            <a href="#" class="subnav__link">Распродажа</a>
+          </li>
+        </ul>
+
+        <p class="subnav__delivery">Бесплатная доставка по России</p>
+      </div><!-- /.subnav__inner -->
+    </div><!-- /.container -->
+  </div><!-- /.subnav -->
+
+  <h1 class="page-title">Вязание на заказ</h1>
+</header><!-- /.page-header -->
+
+<main class="page-main">
+  <section class="order-form form first-section first-section--text">
+    <div class="container">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <div class="form__intro">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </div>
+    </div><!-- /.container -->
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form__content">
+        <div class="form__section">
+          <div class="container">
+            <fieldset class="form__fieldset" aria-labelledby="fieldset-legend-type">
+              <div class="form-group">
+                <div class="form-group__header">
+                  <p class="form-group__title" id="fieldset-legend-type">Тип</p>
+                </div>
+                <div class="form-group__body">
+                  <ul class="input-list">
+                    <li class="input-list__item">
+                      <div class="custom-radio">
+                        <input class="visually-hidden" id="order-form-type-interior" name="type" value="interior" type="radio" checked>
+                        <label class="custom-radio__label" for="order-form-type-interior">
+                          Аксессуар для интерьера
+                        </label>
+                      </div><!-- /.custom-radio -->
+                    </li><!-- /.input-list__item -->
+                    <li class="input-list__item">
+                      <div class="custom-radio">
+                        <input class="visually-hidden" id="order-form-type-toy" name="type" value="toy" type="radio">
+                        <label class="custom-radio__label" for="order-form-type-toy">
+                          Детская игрушка
+                        </label>
+                      </div><!-- /.custom-radio -->
+                    </li><!-- /.input-list__item -->
+                  </ul><!-- /.input-list -->
+                </div><!-- /.form-group__body -->
+              </div><!-- /.form-group -->
+            </fieldset>
+          </div><!-- /.container -->
+        </div><!-- /.form__section -->
+
+        <div class="form__section">
+          <div class="container">
+            <fieldset class="form__fieldset" aria-labelledby="fieldset-legend-color">
+              <div class="form-group">
+                <div class="form-group__header">
+                  <p class="form-group__title" id="fieldset-legend-color">Цвет</p>
+                </div>
+                <div class="form-group__body form-group__body--full">
+                  <ul class="color-input-list">
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-white" name="color[]" value="white" type="checkbox" checked>
+                        <label class="custom-checkbox__label" for="order-form-color-white">Белый</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-gray" name="color[]" value="gray" type="checkbox" checked>
+                        <label class="custom-checkbox__label" for="order-form-color-gray">Серый</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-tiffany" name="color[]" value="tiffany" type="checkbox">
+                        <label class="custom-checkbox__label" for="order-form-color-tiffany">«Тиффани»</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-black" name="color[]" value="black" type="checkbox">
+                        <label class="custom-checkbox__label" for="order-form-color-black">Черный</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-pink" name="color[]" value="pink" type="checkbox">
+                        <label class="custom-checkbox__label" for="order-form-color-pink">Розовый</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+
+                    <li class="color-input-list__item">
+                      <div class="custom-checkbox">
+                        <input class="visually-hidden" id="order-form-color-orange" name="color[]" value="orange" type="checkbox">
+                        <label class="custom-checkbox__label" for="order-form-color-orange">Оранжевый</label>
+                      </div><!-- /.custom-checkbox -->
+                    </li>
+                  </ul><!-- /.color-input-list -->
+                </div><!-- /.form-group__body -->
+              </div><!-- /.form-group -->
+            </fieldset>
+          </div><!-- /.container -->
+        </div><!-- /.form__section -->
+
+        <div class="form__section">
+          <div class="container">
+            <fieldset class="form__fieldset" aria-labelledby="fieldset-legend-full-name">
+              <div class="form-group">
+                <div class="form-group__header">
+                  <p class="form-group__title" id="fieldset-legend-full-name">ФИО</p>
+                </div>
+                <div class="form-group__body">
+                  <div class="form-subgroup">
+                    <div class="form-subgroup__prepend">
+                      <label class="label" for="order-form-name">Имя:</label>
+                    </div>
+                    <div class="form-subgroup__body">
+                      <input class="input input-group__input" id="order-form-name" name="name" value="" type="text" placeholder="Введите ваше имя*">
+                    </div>
+                  </div>
+                  <div class="form-subgroup">
+                    <div class="form-subgroup__prepend">
+                      <label class="label" for="order-form-surname">Фамилия:</label>
+                    </div>
+                    <div class="form-subgroup__body">
+                      <input class="input input-group__input" id="order-form-surname" name="surname" value="" type="text" placeholder="Укажите фамилию*">
+                    </div>
+                  </div>
+                  <div class="form-subgroup">
+                    <div class="form-subgroup__prepend">
+                      <label class="label" for="order-form-midname">Отчество:</label>
+                    </div>
+                    <div class="form-subgroup__body">
+                      <input class="input input-group__input" id="order-form-midname" name="midname" value="" type="text" placeholder="Отчество, если желаете">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div><!-- /.container -->
+        </div><!-- /.form__section -->
+
+        <div class="form__section">
+          <div class="container">
+            <div class="form-group form-group--related">
+              <p class="form-group__header">
+                <label class="form-group__title" for="order-form-phone">Тел</label>
+              </p>
+              <div class="form-group__body">
+                <div class="custom-input">
+                  <input class="input input--icon" id="order-form-phone" name="phone" value="" type="tel" placeholder="+7 ХХХ ХХ ХХ*">
+                  <svg class="custom-input__icon custom-input__icon--phone" width="25" height="24" role="presentation" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+            </div><!-- /.form-group -->
+
+            <div class="form-group form-group--related">
+              <p class="form-group__header">
+                <label class="form-group__title" for="order-form-email">E-mail</label>
+              </p>
+              <div class="form-group__body">
+                <div class="custom-input">
+                  <input class="input input--icon" id="order-form-email" name="email" value="" type="email" placeholder="Ваш Email*">
+                  <svg class="custom-input__icon custom-input__icon--email" width="32" height="32" role="presentation" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+            </div><!-- /.form-group -->
+          </div><!-- /.container -->
+        </div><!-- /.form__section -->
+
+        <div class="form__section">
+          <div class="container">
+            <div class="form-group">
+              <p class="form-group__header">
+                <label class="form-group__title" for="order-form-additional">Доп</label>
+              </p>
+
+              <div class="form-group__body">
+                <textarea class="input input--textarea" id="order-form-additional" name="additional" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </div><!-- /.form-group -->
+          </div><!-- /.container -->
+        </div><!-- /.form__section -->
+      </div><!-- /.form__content -->
+
+      <div class="container">
+        <div class="form__footer">
+          <div class="form__footer-help">*Поля обязательны для заполнения</div>
+          <div class="form__btns">
+            <button class="btn" type="submit">Отправить заказ</button>
+          </div>
+        </div><!-- /.form__footer -->
+      </div>
+    </form>
+  </section><!-- /.order-form -->
+</main>
+
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__inner">
+      <p class="page-footer__logo-container">
+        <a href="index.html" class="page-footer__logo" aria-label="Перейти на главную страницу Мишка">
+          <svg class="page-footer__logo-img" width="102" height="34" role="img">
+            <title>Логотип Мишка</title>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+      </p>
+      <ul class="social page-footer__social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram" target="_blank">
+            <svg class="social__icon" width="22" height="21" role="presentation" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+            <span class="social__name">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook" target="_blank">
+            <svg class="social__icon" width="15" height="28" role="presentation" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+            <span class="social__name">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter" target="_blank">
+            <svg class="social__icon" width="23" height="20" role="presentation" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+            <span class="social__name">Twitter</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          Разработано
+          <svg class="page-footer__copyright-logo" width="27" height="34" role="img" aria-labelledby="icon-logo-htmlacademy-title">
+            <title id="icon-logo-htmlacademy-title">Логотип HTML Academy</title>
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </div><!-- /.page-footer__inner -->
+  </div><!-- /.container -->
+</footer><!-- /.page-footer -->
+
+
+<!-- JS -->
+<script src="js/vendor/svgxuse.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
